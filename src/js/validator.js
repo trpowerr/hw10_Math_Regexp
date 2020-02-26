@@ -1,4 +1,4 @@
-class Validator {
+export class Validator {
     constructor(userName) {
          this.userName = userName;
     }
@@ -11,8 +11,3 @@ class Validator {
         }
     }
 }
-
-const newUser = new Validator();
-
-// newUser.validateUsername('mixazbubl');
-console.log(newUser.validateUsername('mixazbubl'));
