@@ -4,7 +4,7 @@ export class Validator {
     }
 
     validateUsername(userName) {
-        if (userName.search(/(^[a-z+A-Z]+)([\w\-_]*)([a-z+A-Z]$)/) == -1) {
+        if (userName.search(/(^[a-z+A-Z]+)([\w-]*)([a-z+A-Z]$)/) == -1) {
              throw('Wrong user name!');
         } else {
             return userName;
